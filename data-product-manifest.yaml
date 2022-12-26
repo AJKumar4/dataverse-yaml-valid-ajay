@@ -12,7 +12,7 @@ discoveryPort:
   extra: {}
 
 inputPorts:
-  - alias: 'mafh-analytics-data-ingestion'
+  - alias: 'mafh-analytics-data-ingestion
     description: string
     tags: []
     extra: {}
