@@ -12,13 +12,12 @@ discoveryPort:
   extra: {}
 
 inputPorts:
-  - alias: 'mafh-analytics-data-ingestion
+  - alias: 'mafh-analytics-data-ingestion'
     description: string
     tags: []
     extra: {}
     syncType: 'pull'
     type: 's3'
-    sourceUrn: 'urn:dv:datasource:crf-customers-6d4714c3'
     entityId:
       alias: 'customers'
       createEntity: true
