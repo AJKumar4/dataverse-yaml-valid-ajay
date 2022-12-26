@@ -1,5 +1,4 @@
 # --- Data product definition template and documentation   --- #
-# Modifying the Data to test #
 
 # Data product manifest version. Prefer to have semantic version
 version: '0.0.1'
