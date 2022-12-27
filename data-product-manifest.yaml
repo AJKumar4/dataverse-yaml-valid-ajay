@@ -23,7 +23,7 @@ inputPorts:
       createEntity: true
       refId: 1
       type: 's3-bucket'
-      entityPath: 
+        entityPath: 
       entityFilterPatternMatch: '*'
       sourceSchemaUrn: null
       projectSchemaUrn: null
