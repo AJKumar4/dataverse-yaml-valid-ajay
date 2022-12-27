@@ -5,9 +5,9 @@ version: 1.1
 
 discoveryPort:
   name: 'CFR customer data ajay'
-  description: 'A daliy updated product about CRF customer data. It consist of more than 20M records integrated from 5 different sources'
+  description: 'A daily updated product about CRF customer data. It consist of more than 20M records'
   category: string
-  autofillUserinfo: false
+  autofillUserinfo: true
   tags: ["Test","verify","build validation","deve_test"]
   extra: {}
 
