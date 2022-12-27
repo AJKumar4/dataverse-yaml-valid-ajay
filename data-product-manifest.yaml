@@ -21,9 +21,9 @@ inputPorts:
     entityId:
       alias: 'customers'
       createEntity: true
-#       refId: 1
-#       type: 's3-bucket'
-#       entityPath: 's3a://mafh-analytics-data-ingestion/data-ingestion/prd/parsed/rtl_crf_dim_account/'
+      refId: 1
+      type: 's3-bucket'
+      entityPath: 
       entityFilterPatternMatch: '*'
       sourceSchemaUrn: null
       projectSchemaUrn: null
