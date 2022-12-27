@@ -4,7 +4,7 @@
 version: 1.1
 
 discoveryPort:
-  name: "CFR customer data ajay date"
+  name: "CFR customer's data ajay"
   description: 'A daily updated product about CRF customer data. It consist of more than 20M records'
   category: string
   autofillUserinfo: true
@@ -14,7 +14,7 @@ discoveryPort:
 inputPorts:
   - alias: 'mafh-analytics-data-ingestion'
     description: string
-    tags: []
+    tags: ["ports","input ports"]
     extra: {}
     syncType: 'pull'
     type: 's3'
