@@ -27,7 +27,7 @@ inputPorts:
       entityFilterPatternMatch: '*'
       sourceSchemaUrn: null
       projectSchemaUrn: null
-      fileFormat: 'csv'
+      fileFormat: 'xlsx'
       delimiter: '|'
       filter: 'active_flag=1'
       # the date/time the event was logged in the source system (incremental column)
