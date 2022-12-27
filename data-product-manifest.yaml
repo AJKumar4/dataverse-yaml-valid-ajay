@@ -4,12 +4,12 @@
 version: 1.1
 
 discoveryPort:
-  name: "CFR customer data ajay \date"
+  name: "CFR customer data ajay date"
   description: 'A daily updated product about CRF customer data. It consist of more than 20M records'
   category: string
   autofillUserinfo: true
   tags: ["Test","verify","build validation","deve_test"]
-  extra: {}
+  extra: {"Test":1,"develop":2}
 
 inputPorts:
   - alias: 'mafh-analytics-data-ingestion'
