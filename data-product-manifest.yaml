@@ -87,7 +87,7 @@ stateManagement:
     logicalSchemaUrn: '${urn:dv:schema:9d4716c3}'
     retentionVersions: '10'
   updateStrategyOptions:
-    # entityUrn:
+    entityUrn:
     - # columns to use to create a unique key (e.g. hash of columns to be used in scd2 de-duplication)
       uniqueKeyColumns: ['customer_id']
       # Business columns for which to track changes (hash id column)
