@@ -8,7 +8,7 @@ discoveryPort:
   description: 'A daliy updated product about CRF customer data. It consist of more than 20M records integrated from 5 different sources'
   category: string
   autofillUserinfo: false
-  tags: ["Test","verify","build validation"]
+  tags: ["Test","verify","build validation","deve_test"]
   extra: {}
 
 inputPorts:
