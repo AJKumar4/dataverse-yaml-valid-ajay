@@ -1,13 +1,13 @@
 # --- Data product definition template and documentation   --- #
 
 # Data product manifest version. Prefer to have semantic version
-#version: 1.1
+version: 1.1
 
 discoveryPort:
-  name: "CFR customer's data ajay"
+#   name: "CFR customer's data ajay"
   description: 'A daily updated product about CRF customer data. It consist of more than 20M records'
-#   category: string
-#   autofillUserinfo: true
+  category: string
+  autofillUserinfo: true
   tags: ["Test","verify","build validation","deve_test"]
   extra: {"Test":1,"develop":2}
 
