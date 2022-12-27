@@ -76,7 +76,7 @@ inputPorts:
 # Infromation regarding the product data and logical schema. Define the update strategy via updateStrategy options.
 stateManagement:
   # interval of data product has to be refreshed, this
-  refreshInterval: '00 10 * * *'
+  refreshInterval: '00 7 * * *'
   # the logical schema for the storage of the data product state
   logicalSchemaUrn: '${urn:dv:schema:9d4716c3}'
   # history of version to keep
