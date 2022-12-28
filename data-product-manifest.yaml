@@ -1,33 +1,34 @@
 # --- Data product definition template and documentation   --- #
 
 # Data product manifest version. Prefer to have semantic version
-version: 1.1
+version: 1
 
 discoveryPort:
-  name: "CFR customer's data ajay"
-  description: 'A daily updated product about CRF customer data. It consist of more than 20M records'
+  name: 'CFR customer data Ufuk3'
+  description: 'A daliy updated product about CRF customer data. It consist of more than 20M records integrated from 5 different sources'
   category: string
   autofillUserinfo: true
-  tags: ["Test","verify","build validation","deve_test"]
-  extra: {"Test":1,"develop":2}
+  tags: []
+  extra: {}
 
 inputPorts:
   - alias: 'mafh-analytics-data-ingestion'
     description: string
-    tags: ["ports","input ports"]
+    tags: []
     extra: {}
     syncType: 'pull'
     type: 's3'
+    sourceUrn: 'urn:dv:datasource:crf-customers-6d4714c3'
     entityId:
       alias: 'customers'
       createEntity: true
       refId: 1
       type: 's3-bucket'
-      entityPath: 
+      entityPath: 's3a://mafh-analytics-data-ingestion/data-ingestion/prd/parsed/rtl_crf_dim_account/'
       entityFilterPatternMatch: '*'
       sourceSchemaUrn: null
       projectSchemaUrn: null
-      fileFormat: 'xlsx'
+      fileFormat: 'csv'
       delimiter: '|'
       filter: 'active_flag=1'
       # the date/time the event was logged in the source system (incremental column)
@@ -76,7 +77,7 @@ inputPorts:
 # Infromation regarding the product data and logical schema. Define the update strategy via updateStrategy options.
 stateManagement:
   # interval of data product has to be refreshed, this
-  refreshInterval: '00 7 * * *'
+  refreshInterval: '00 10 * * *'
   # the logical schema for the storage of the data product state
   logicalSchemaUrn: '${urn:dv:schema:9d4716c3}'
   # history of version to keep
@@ -87,7 +88,7 @@ stateManagement:
     logicalSchemaUrn: '${urn:dv:schema:9d4716c3}'
     retentionVersions: '10'
   updateStrategyOptions:
-    entityUrn:
+    # entityUrn:
     - # columns to use to create a unique key (e.g. hash of columns to be used in scd2 de-duplication)
       uniqueKeyColumns: ['customer_id']
       # Business columns for which to track changes (hash id column)
