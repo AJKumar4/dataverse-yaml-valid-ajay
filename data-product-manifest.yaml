@@ -21,7 +21,7 @@ inputPorts:
     sourceUrn: 'urn:dv:datasource:crf-customers-6d4714c3'
     entityId:
       alias: 'customers'
-        createEntity: true
+      createEntity: true
       refId: 1
       type: 's3-bucket'
       entityPath: 's3a://mafh-analytics-data-ingestion/data-ingestion/prd/parsed/rtl_crf_dim_account/'
