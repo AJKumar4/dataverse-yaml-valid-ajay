@@ -4,7 +4,7 @@
 version: 1
 
 discoveryPort:
-  name: 'CFR customer data ajay dataverse testing'
+  name: 'Testing DP get list'
   description: 'A daliy updated product about CRF customer data. It consist of more than 20M records integrated from 5 different sources'
   category: string
   autofillUserinfo: true
