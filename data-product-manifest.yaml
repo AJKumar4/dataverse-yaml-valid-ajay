@@ -1,7 +1,8 @@
 # --- Data product definition template and documentation   --- #
 version: 0.0.1
 discoveryPort:
-  name: Data Product Test DP_01
+  name: Data Product Test DP_01 testing the dataproduct A daliy updated product about CRF customer data. It consist of more
+    than 20M records integrated from 5 different sources
   description: A daliy updated product about CRF customer data. It consist of more
     than 20M records integrated from 5 different sources
   category: customer
