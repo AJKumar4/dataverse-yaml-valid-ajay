@@ -15,8 +15,7 @@ inputPorts:
   tags: []
   extra: {}
   syncType: pull
-  type: s3
-  sourceUrn: 
+  type: s3 
   entityId:
     alias: customers
     createEntity: true
