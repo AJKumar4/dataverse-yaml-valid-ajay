@@ -1,7 +1,7 @@
 # --- Data product definition template and documentation   --- #
 version: 0.0.1
 discoveryPort:
-  name: CFR customer data LATEST
+  name: Regression Testing 19/01
   description: A daliy updated product about CRF customer data. It consist of more
     than 20M records integrated from 5 different sources
   category: customer
@@ -10,9 +10,9 @@ discoveryPort:
   tags: []
   extra: {}
 inputPorts:
-- alias: mafh-analytics-data-ingestion
-  description: string
-  tags: []
+- alias: Testing the manifest file
+  description: This is to test the manifest file validations
+  tags: [Manifest, test, dataproduct]
   extra: {}
   syncType: pull
   type: s3
@@ -71,7 +71,7 @@ inputPorts:
     - file_name
 stateManagement:
   refreshInterval: 00 10 * * *
-  updateStrategy: SCD
+  updateStrategy: SCD3
   updateStrategyOptions:
   - entityRef: "${urn:dv:datasource:6d4714c3}:1"
     uniqueKeyColumns:
