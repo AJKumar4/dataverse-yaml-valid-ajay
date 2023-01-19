@@ -10,7 +10,7 @@ discoveryPort:
   tags: []
   extra: {}
 inputPorts:
-- alias: Testing the manifest file
+- alias: Testing the manifest file. Verify the data displayed in the page as per the design or not
   description: This is to test the manifest file validations
   tags: [Manifest, test, dataproduct]
   extra: {}
