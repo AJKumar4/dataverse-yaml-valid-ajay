@@ -1,22 +1,21 @@
 # --- Data product definition template and documentation   --- #
 version: 0.0.1
 discoveryPort:
-  name: CFR customer data LATEST
-  description: A daliy updated product about CRF customer data. It consist of more
-    than 20M records integrated from 5 different sources
+  name: Regression test 01/19
+  description: Manifest file to validate create data product
   category: customer
   image: http://www.google.com
   autofillUserinfo: true
-  tags: []
+  tags: ["Regression","Test"]
   extra: {}
 inputPorts:
-- alias: mafh-analytics-data-ingestion
-  description: string
-  tags: []
+- alias: analytics-data-ingestion
+  description: Input port details
+  tags: ["Test Entity"]
   extra: {}
   syncType: pull
   type: s3
-  sourceUrn: urn:dv:datasource:36b5641a-720a-46d2-ac34-264af0e7eb25
+  sourceUrn: urn:dv:datasource:6c8ded34-a612-4814-89c7-676c598dbca3
   entityId:
     alias: customers
     createEntity: true
@@ -71,7 +70,7 @@ inputPorts:
     - file_name
 stateManagement:
   refreshInterval: 00 10 * * *
-  updateStrategy: SCD
+  updateStrategy: SCD4
   updateStrategyOptions:
   - entityRef: "${urn:dv:datasource:6d4714c3}:1"
     uniqueKeyColumns:
@@ -95,7 +94,7 @@ stateManagement:
     - country_key
   productStoreState:
     logicalSchemaUrn: "${urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9}"
-    retentionVersions: '10'
+    retentionVersions: '14'
 transformation:
   sql: select 'CRF' as source, customer_id, date_format(cust_birthday, 'yyyy-MM-dd')
     as dateOfBirth, coalesce(cust_nationality,'') as nationality, coalesce(cust_mobile,'')
@@ -115,7 +114,7 @@ controlPort:
   tags: []
   extra: {}
 outputPort:
-- alias: string
+- alias: test output port
   queryType: string
   slo: {}
   tags: []
