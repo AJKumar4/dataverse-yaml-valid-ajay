@@ -1,7 +1,7 @@
 # --- Data product definition template and documentation   --- #
 version: 0.0.1
 discoveryPort:
-  name: Backend testing 23/01
+  name: Backend testing 23/01/2022
   description: Testing the backend Integration
   category: customer
   image: http://www.google.com
