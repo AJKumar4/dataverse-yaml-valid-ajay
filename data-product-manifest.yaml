@@ -1,9 +1,8 @@
 # --- Data product definition template and documentation   --- #
 version: 0.0.1
 discoveryPort:
-  name: CFR customer data LATEST
-  description: A daliy updated product about CRF customer data. It consist of more
-    than 20M records integrated from 5 different sources
+  name: Backend testing 23/01
+  description: Testing the backend Integration
   category: customer
   image: http://www.google.com
   autofillUserinfo: true
