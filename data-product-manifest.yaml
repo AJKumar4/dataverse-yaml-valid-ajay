@@ -1,6 +1,7 @@
 # --- Data product definition template and documentation   --- #
 version: 0.0.1
 discoveryPort:
+  name: verify DP
   description: Testing the backend Integration
   category: customer
   image: http://www.google.com
