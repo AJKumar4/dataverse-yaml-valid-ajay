@@ -3,8 +3,8 @@ version: 0.0.1
 discoveryPort:
   name: Webhooks testing
   description: Testing the backend Integration
-  category: customer
-  image: 1234
+  category: 123
+  image: http://www.google.com
   autofillUserinfo: true
   tags: []
   extra: {}
