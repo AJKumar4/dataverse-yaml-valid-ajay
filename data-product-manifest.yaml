@@ -14,7 +14,7 @@ discoveryPort:
 
 inputPorts:
   - alias: 'mafh-analytics-data-ingestion'
-    description:
+    description: 'Input port details'
     tags: []
     extra: {}
     syncType: 'pull'
