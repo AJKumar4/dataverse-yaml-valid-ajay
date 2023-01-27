@@ -1,8 +1,9 @@
 # --- Data product definition template and documentation   --- #
 version: 0.0.1
 discoveryPort:
-  name: Webhooks testing - updated name
-  description: Testing the backend Integration
+  name: CFR customer data LATEST
+  description: A daliy updated product about CRF customer data. It consist of more
+    than 20M records integrated from 5 different sources
   category: customer
   image: http://www.google.com
   autofillUserinfo: true
@@ -15,7 +16,7 @@ inputPorts:
   extra: {}
   syncType: pull
   type: s3
-  sourceUrn: urn:dv:datasource:6c8ded34-a612-4814-89c7-676c598dbc
+  sourceUrn: urn:dv:datasource:516d616a-c723-48b0-9a4a-b772094e0a81
   entityId:
     alias: customers
     createEntity: true
