@@ -4,10 +4,10 @@
 version: '0.0.1'
 
 discoveryPort:
-  name: 'CFR customer data'
+  name: 'Regression Test 27/01'
   description: 'A daliy updated product about CRF customer data. It consist of more than 20M records integrated from 5 different sources'
   category: 'customer'
-  image:
+  image: http://www.google.com
   autofillUserinfo: true
   tags: []
   extra: {}
