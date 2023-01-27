@@ -111,7 +111,7 @@ transformation:
 controlPort:
   dataQualityRules: []
   businessMetrics: {}
-  slo: {}
+  slo: null
   tags: []
   extra: {}
 outputPort:
