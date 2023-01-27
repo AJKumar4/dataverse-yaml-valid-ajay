@@ -1,7 +1,7 @@
 # --- Data product definition template and documentation   --- #
 version: 0.0.1
 discoveryPort:
-  name: CFR customer data LATEST
+  name: Regression Testing 27/01
   description: A daliy updated product about CRF customer data. It consist of more
     than 20M records integrated from 5 different sources
   category: customer
@@ -25,7 +25,7 @@ inputPorts:
     entityPath: s3a://mafh-analytics-data-ingestion/data-ingestion/prd/parsed/rtl_crf_dim_account/
     entityFilterPatternMatch: "*"
     sourceSchemaUrn:
-    projectSchemaUrn: Project123
+    projectSchemaUrn:
     fileFormat: csv
     delimiter: "|"
     filter: active_flag=1
