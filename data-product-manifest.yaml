@@ -1,7 +1,7 @@
 # --- Data product definition template and documentation   --- #
 version: 0.0.1
 discoveryPort:
-  name: Regression Latest changes 27/01
+  name: Regression Latest changes verifying projectsourceURN
   description: A daliy updated product about CRF customer data. It consist of more
     than 20M records integrated from 5 different sources
   category: customer
@@ -25,7 +25,7 @@ inputPorts:
     entityPath: s3a://mafh-analytics-data-ingestion/data-ingestion/prd/parsed/rtl_crf_dim_account/
     entityFilterPatternMatch: "*"
     sourceSchemaUrn: "urn:dv:schema:9d4716d6"
-    projectSchemaUrn: "urn:dv:schema:9d471"
+    projectSchemaUrn: 
     fileFormat: csv
     delimiter: "|"
     filter: active_flag=1
