@@ -4,8 +4,8 @@
 version: 1
 
 discoveryPort:
-  name: 'Testing DP get list'
-  description: 'A daliy updated product about CRF customer data. It consist of more than 20M records integrated from 5 different sources'
+  name: 'Regression Testing 30/01'
+  description: 'Verifying the Web hooks functionality'
   category: string
   autofillUserinfo: true
   tags: ["Test","Dev","dataverse"]
