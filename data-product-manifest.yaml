@@ -17,7 +17,7 @@ inputPorts:
     extra: {}
     syncType: pull
     type: s3
-    sourceUrn: urn:dv:datasource:8956c4c3-38e9-4833-8e32-967a13688ca5
+    sourceUrn: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
     entityId:
       alias: user1
       createEntity: true
@@ -44,7 +44,7 @@ inputPorts:
     extra: {}
     syncType: pull
     type: s3
-    sourceUrn: urn:dv:datasource:8956c4c3-38e9-4833-8e32-967a13688ca5
+    sourceUrn: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
     entityId:
       alias: user2
       createEntity: true
