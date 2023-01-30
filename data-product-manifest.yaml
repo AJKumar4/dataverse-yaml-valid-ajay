@@ -35,7 +35,7 @@ inputPorts:
       actualTimeColumn:
         - test
       projection:
-        - sl no
+        - "sl no"
         - brand
         - model
   - alias: user2_s3_input_port
@@ -62,7 +62,7 @@ inputPorts:
       actualTimeColumn:
         - test
       projection:
-        - sl no
+        - "sl no"
         - brand
         - model
 stateManagement:
