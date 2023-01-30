@@ -2,8 +2,7 @@
 version: 0.0.1
 discoveryPort:
   name: Regression test_web hook verification
-  description: A daliy updated product about CRF customer data. It consist of more
-    than 20M records integrated from 5 different sources
+  description: Updated the Description to verify the web hooks
   category: customer
   image: ""
   autofillUserinfo: true
