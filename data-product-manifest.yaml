@@ -11,7 +11,7 @@ discoveryPort:
     - House Rental
   extra: {}
 inputPorts:
-  - alias: usersS3_input_port
+  - alias: user1_S3_input_port
     description: string
     tags: []
     extra: {}
@@ -19,47 +19,64 @@ inputPorts:
     type: s3
     sourceUrn: urn:dv:datasource:36b5641a-720a-46d2-ac34-264af0e7eb25
     entityId:
-      alias: usersS3
+      alias: user1
       createEntity: true
       entityName: houses_Madrid.parquet
       type: s3-bucket
-      entityPath: s3a://dp-input-bucket/test/houses_Madrid.parquet
+      entityPath: s3://dp-input-bucket/Multiple_Input_test2/cars1.csv
       entityFilterPatternMatch: "*"
       sourceSchemaUrn: urn:dv:schema:9d4716d4
       projectSchemaUrn: urn:dv:schema:9d4716d6
-      fileFormat: parquet
-      delimiter: "|"
-      filter: subtitle != ''
+      fileFormat: csv
+      delimiter: ","
+      filter: ""
       processingTimeColumn:
-        - processing_time
+        - test
       actualTimeColumn:
-        - processing_time
+        - test
       projection:
-        - id
-        - title
-        - subtitle
-        - sq_mt_built
-        - sq_mt_useful
-        - rent_price
-        - rent_price_by_area
-        - buy_price
-        - buy_price_by_area
+        - sl no
+        - brand
+        - model
+  - alias: user2_s3_input_port
+    description: string
+    tags: []
+    extra: {}
+    syncType: pull
+    type: s3
+    sourceUrn: s3://dp-input-bucket/Multiple_Input_test2/cars1.csv
+    entityId:
+      alias: user2
+      createEntity: true
+      entityName: cars1
+      type: s3-bucket
+      entityPath: s3://dp-input-bucket/Multiple_Input_test2/cars1.csv
+      entityFilterPatternMatch: "*"
+      sourceSchemaUrn: urn:dv:schema:9d4716d4
+      projectSchemaUrn: urn:dv:schema:9d4716d6
+      fileFormat: csv
+      delimiter: ","
+      filter: ""
+      processingTimeColumn:
+        - test
+      actualTimeColumn:
+        - test
+      projection:
+        - sl no
+        - brand
+        - model
 stateManagement:
-  alias: users_count_by_gender
+  alias: multiple_input_Test
   refreshInterval: 00 10 * * *
-  logicalSchemaUrn: ${urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9}
-  retentionVersions: "10"
   updateStrategy: SCD-2
   productStoreState:
-    logicalSchemaUrn: ${urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9}
+    logicalSchemaUrn: urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9
     retentionVersions: "10"
   updateStrategyOptions:
-    - entityRef: ${urn:dv:datasource:6d4714c3}:1
+    - entityRef: test
       uniqueKeyColumns:
-        - customer_id
+        - test
       changeTrackColumns:
-        - cust_title_desc
-        - cust_birthday
-        - cust_nationality
+        - test
 transformation:
-  sql: select * from usersS3
+  sql: select * from user1, user2
